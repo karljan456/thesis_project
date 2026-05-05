@@ -21,8 +21,9 @@ except:
     st.stop()
 
 # dataset import
-white_wine_data = pd.read_csv(r"wine_data\winequality-white.csv", sep=";")
-red_wine_data = pd.read_csv(r"wine_data\winequality-red.csv", sep=";")
+white_wine_data = pd.read_csv("wine_data/winequality-white.csv", sep=";")
+red_wine_data = pd.read_csv("wine_data/winequality-red.csv", sep=";")
+
 
 white_wine_data.columns = white_wine_data.columns.str.strip().str.lower().str.replace(" ", "_")
 red_wine_data.columns = red_wine_data.columns.str.strip().str.lower().str.replace(" ", "_")
